@@ -56,7 +56,7 @@ function draw(){
 	textSize(25);
 	text("Shoot the meteorites and don't let them touch you!",
 	 windowWidth/2-250, windowHeight-500);
-	   text("Press 'Space' to shoot the lasers, windowWidth/2-250, windowHeight-450);
+	   text("Press 'Space' to shoot the lasers", windowWidth/2-250, windowHeight-450);
 	text("Press 'enter' to play", windowWidth/2-250, windowHeight-400);
    }
 	if(keyDown(ENTER)&& gameState==="start"){
