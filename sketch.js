@@ -54,9 +54,10 @@ function draw(){
 	text("Cosmic Ranger", windowWidth/2-100, windowHeight-600);
 	fill("orange");
 	textSize(25);
-	text("Shoot the lasers and don't let the meteorites touch you!",
+	text("Shoot the meteorites and don't let them touch you!",
 	 windowWidth/2-250, windowHeight-500);
-	text("Press 'enter' to play", windowWidth/2-250, windowHeight-450);
+	   text("Press 'Space' to shoot the lasers, windowWidth/2-250, windowHeight-450);
+	text("Press 'enter' to play", windowWidth/2-250, windowHeight-400);
    }
 	if(keyDown(ENTER)&& gameState==="start"){
 		gameState="play";
