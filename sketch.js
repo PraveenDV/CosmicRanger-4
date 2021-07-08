@@ -25,6 +25,7 @@ function setup() {
 	//Create the Bodies Here.
 
 	player=createSprite(windowWidth-921, windowHeight-191, 10, 10);
+	player.setCollider('circle', 0, 0, 140);
 	player.addImage(playerImg);
 	player.scale=0.4;
 
@@ -43,7 +44,6 @@ function setup() {
 
 function draw(){
    background(bg);
-
    obstSpeed = score + Math.round(getFrameRate()/60);
 
    if(gameState==="start"){
@@ -153,6 +153,7 @@ function reset(){
 	score=0;
 
 	player=createSprite(windowWidth-921, windowHeight-191, 10, 10);
+	player.setCollider('circle', 0, 0, 140);
 	player.addImage(playerImg);
 	player.scale=0.4;
 }
